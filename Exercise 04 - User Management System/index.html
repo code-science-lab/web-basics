@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>用户登录</title>
+    <!-- <link
+      href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    /> -->
+    <link
+      href="assets/bootstrap-5.3.3-dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/css/shared.css" rel="stylesheet" />
+  </head>
+  <body class="login-bg">
+    <div class="container">
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow">
+            <div class="card-body">
+              <h3 class="card-title text-center mb-4">用户登录</h3>
+              <form id="loginForm">
+                <div class="mb-3">
+                  <label for="username" class="form-label">用户名</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="username"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="password" class="form-label">密码</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    required
+                  />
+                </div>
+                <button type="submit" class="btn btn-primary w-100">
+                  登录
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script> -->
+    <script src="assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

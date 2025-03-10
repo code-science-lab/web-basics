@@ -1,0 +1,18 @@
+bootstrap-demo/
+│
+├── index.html            # 登录页面
+├── home.html             # 主页
+├── user-management.html  # 用户管理页面
+│
+├── assets/
+│   ├── css/
+│   │   ├── styles.css    # 自定义CSS
+│   │   └── shared.css    # 公共样式
+│   │
+│   └── js/
+│       ├── main.js       # 公共JS
+│       └── users.js      # 用户管理JS
+│
+└── partials/             # 公共部分
+    ├── sidebar.html
+    └── navbar.html

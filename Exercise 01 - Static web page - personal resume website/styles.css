@@ -1,0 +1,87 @@
+通用样式 body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+h1,
+h2 {
+  margin-bottom: 10px;
+}
+
+section {
+  max-width: 800px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+ul li i {
+  margin-right: 10px;
+  color: #007bff;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+/* 响应式布局 */
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/*按钮效果*/
+button {
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/*动画*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+section {
+  animation: fadeIn 1s ease-in-out;
+}
