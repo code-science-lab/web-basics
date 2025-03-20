@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   entry: "./src/index.js",
   output: {
-    filename: "bundle.js",
+    filename: "[name].[contenthash].bundle.js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
   },
@@ -12,6 +12,8 @@ module.exports = {
   devServer: {
     static: "./dist",
     hot: true,
+    port: 8080,
+    open: true, // 自动打开浏览器
   },
   module: {
     rules: [
