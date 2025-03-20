@@ -2,6 +2,12 @@ import { fetchProducts } from "./api";
 import { Cart } from "./cart";
 import "./styles.css";
 
+// 引入 Bootstrap 的 CSS 文件
+import "bootstrap/dist/css/bootstrap.min.css";
+
+// 引入 Bootstrap 的 JS 文件
+import "bootstrap";
+
 // 初始化购物车
 const cart = new Cart();
 
@@ -20,7 +26,7 @@ const renderProducts = async () => {
     <div class="product">
       <h3>${product.name}</h3>
       <p>价格：¥${product.price}</p>
-      <button onclick="addToCart(${product.id})">加入购物车</button>
+      <button class="btn btn-primary" onclick="addToCart(${product.id})">加入购物车</button>
     </div>
   `
     )
@@ -45,7 +51,7 @@ const updateCartDisplay = () => {
       ({ id, name, price, quantity }) => `
     <li>
       ${name} × ${quantity} 
-      <button onclick="removeFromCart(${id})">删除</button>
+      <button class="btn btn-danger" onclick="removeFromCart(${id})">删除</button>
     </li>
   `
     )

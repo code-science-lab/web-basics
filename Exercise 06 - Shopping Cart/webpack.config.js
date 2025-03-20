@@ -31,6 +31,14 @@ module.exports = {
           },
         },
       },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf|svg)$/, // 匹配字体文件
+        type: "asset/resource", // 使用内置的 asset/resource 处理
+      },
+      {
+        test: /\.(png|jpg|jpeg|gif)$/, // 匹配图片文件
+        type: "asset/resource", // 使用内置的 asset/resource 处理
+      },
     ],
   },
   plugins: [
